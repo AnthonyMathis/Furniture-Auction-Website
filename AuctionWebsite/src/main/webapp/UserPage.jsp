@@ -9,7 +9,7 @@
 <title>All Listings</title>
 </head>
 <body>
-<a href="http://localhost:8080/FurnitureAuctionWebsite/HomePage.jsp">Home</a>
+<a href="http://localhost:8080/AuctionWebsite/HomePage.jsp">Home</a>
 <br>
 <% 
 try {
@@ -47,7 +47,7 @@ try {
        out.print("<li>");
        // Listing 1: Bed ($50, increment $10, minimum bid $10, expires 10/10/2022) listed by
        out.print("Listing " + id + ": <b>" + category + " $" + price + "</b> (increment $" + increment + ", expires " + expires + ") listed by " + username + ".");
-       out.print(" <small><a href=\"http://localhost:8080/FurnitureAuctionWebsite/ListingPage.jsp?listing_id="+id+"&item_type="+category+"\">Click here to view listing.</a></small>");
+       out.print(" <small><a href=\"http://localhost:8080/AuctionWebsite/ListingPage.jsp?listing_id="+id+"&item_type="+category+"\">Click here to view listing.</a></small>");
        
         out.print("</li>");
    }
@@ -66,7 +66,7 @@ try {
 	       out.print("<li>");
 	       // Admin bid $10 on bed
 	       out.print(username + " bid $" + price + " on " + category + ".");
-	       out.print(" <small><a href=\"http://localhost:8080/FurnitureAuctionWebsite/ListingPage.jsp?listing_id="+listing_id+"&item_type="+category+"\">Click here to view listing.</a></small>");
+	       out.print(" <small><a href=\"http://localhost:8080/AuctionWebsite/ListingPage.jsp?listing_id="+listing_id+"&item_type="+category+"\">Click here to view listing.</a></small>");
 	       
 	        out.print("</li>");
 	   }
